@@ -5,7 +5,7 @@ Is your name Donald, and is this the way to paradise?
 
 #### Q 2
 
-His father, sibling deceased?
+its him
 
 
 #### Q 3 - days of the week
