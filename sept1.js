@@ -7,7 +7,11 @@ var genGrid = function(char,numOfRow,numOfCol){
     var grid = '';
     for (row = 0; row < numOfRow; row++) {
         for (col = 0; col < numOfCol; col++) {
-            grid += char + ' ';
+            if (row%2 === 0) {
+                grid += char + ' ';
+            } else {
+                grid += ' ' + char;
+            }
         }
         grid += '\n';
     }
