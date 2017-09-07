@@ -18,5 +18,5 @@ if (char.match(/\W/g)) {
 
 var messageArr = message.split('');
 var decode = messageArr.map(shiftLetter);
-decode = decode.join();
+decode = decode.join("");
 console.log(decode);
