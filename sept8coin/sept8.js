@@ -1,4 +1,4 @@
-console.log("Sept 8, The Ultimate Life Decider ")
+console.log("Sept 8, The Ultimate Life Decider- ARRAYS ")
 
   var tailsArr = [];
   var headsArr = [];
@@ -32,7 +32,7 @@ console.log("Sept 8, The Ultimate Life Decider ")
 console.log(tossWinner());
 
 
-console.log("Sept 8, The Ultimate Life Decider 2")
+console.log("Sept 8, The Ultimate Life Decider - COUNTER")
 
   var headsCount = 0;
   var tailsCount = 0;
