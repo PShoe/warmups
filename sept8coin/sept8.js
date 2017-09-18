@@ -14,8 +14,7 @@ console.log("Sept 8, The Ultimate Life Decider- ARRAYS ")
       coin = 'tails';
       tailsArr.push(coin);
     }
-    }
-
+  }
   var tossArr = tailsArr.concat(headsArr);
   tossArr = tossArr.join(" ");
 
