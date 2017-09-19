@@ -5,6 +5,21 @@
 
 require 'pry'
 
+you_say = ""
+def leet_speak (you_say)
+  puts you_say
+  # you_say = you_say.gsub(/a/i, "4")
+  # you_say = you_say.gsub(/e/i, "3")
+  # you_say = you_say.gsub(/o/i, "1")
+  # you_say = you_say.gsub(/u/i, "0")
+  you_say = you_say.tr("aeioAEIO",'43104310')
+# 
+# Words that start with a consonant start with lower case
+# Consonants after the first letter alternate upper and lower case, except the alternation starts over with lowercase after a digit (ex: sCh00l)
+
+  puts you_say
+end
+
 loop do
   puts "Say something to Daniel"
   you_say = gets.gsub "\n", ""
@@ -13,16 +28,19 @@ loop do
     puts "Goodbye"
     break
   else you_say != "Stop"
-    if you_say == ""
+    if you_say.downcase.include? "bro,"
+      leet_speak(you_say)
+    elsif you_say == ""
     puts 'Fine. Be that way!'
     elsif you_say == you_say.upcase
       puts 'Woah, chill out!'
-    elsif you_say.include?("\?")
+    elsif you_say[-1] == "?"
       puts 'Sure.'
     else
       puts 'Whatever.'
     end
   end
+
 end
 
 
