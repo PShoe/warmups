@@ -6,11 +6,13 @@ console.log('working')
 // }
 
 var string = "title=jaws&page=5"
-string = string.split(/\W/g)
+string = string.split(/\W/)
 
 var book_js = {}
-// book[title] = 'jaws'
-// book[page] = 5
+var title = string[0]
+var page = string[2]
 
-book_js[string[0]] = string[1]
-book_js[string[2]] = string[3]
+book_js[title] = string[1]
+book_js[page] = Number(string[3])
+
+console.log(book_js)

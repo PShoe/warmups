@@ -11,8 +11,9 @@ string = string.split(/\W/)
 title = string[0]
 page = string[2]
 
-book_ruby[:title] = 'jaws'
-book_ruby[:page] = 5
+book_ruby[:title] = string[1]
+book_ruby[:page] = string[3].to_i
 
+puts book_ruby
 
 binding.pry
