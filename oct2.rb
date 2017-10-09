@@ -14,6 +14,7 @@ class Say
     else
       under_twenty = false
     end
+    
     @num = @num.to_s
     @number_array = []
 
