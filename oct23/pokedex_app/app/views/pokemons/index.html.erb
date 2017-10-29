@@ -1,0 +1,7 @@
+<h1>View all pokemons<h1>
+<a href="/pokemons/new">Make new pokemon</a>
+<% @pokemons.each do |pokemon| %>
+<h1>Species: <%= pokemon.species %></h1>
+<h1>Nickname: <%= pokemon.nickname %></h1>
+<h1>Level: <%= pokemon.level %></h1>
+<% end %>

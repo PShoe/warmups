@@ -1,0 +1,16 @@
+<h1>Make a new pokemon</h1>
+
+<%= form_tag '/pokemons', method: 'post' do %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="species">Species</label>
+  <input type="text" name="species">
+
+  <label for="nickname">Nickname</label>
+  <input type="text" name="nickname">
+
+  <label for="level">Level</label>
+  <input type="number" name="level" value="">
+
+  <button type="submit" name="button">Add new</button>
+<% end %>
